@@ -5,6 +5,13 @@
 #include <fstream>
 using namespace std;
 
+/*
+* What's the strategy for reading in the pyramid?
+* Requirements:
+* read in one line at a time. each number should be initialized into a Node that has a single parent (non-null)
+*  and two null children.
+*/
+
 struct Node {
     int val;
     int max_path;
@@ -27,12 +34,6 @@ struct Pyramid {
     int num_nodes;
 
     Pyramid(string file_name) {
-        /*
-        * What's the strategy for reading in the pyramid?
-        * Requirements:
-        * read in one line at a time. each number should be initialized into a Node that has a single parent (non-null)
-        *  and two null children.
-        */
 
         ifstream fin(file_name);
         if (!fin.is_open()) {
