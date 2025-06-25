@@ -127,3 +127,9 @@ int main() {
     cout << max << '\n';
     return 0;
 }
+
+/*
+ * I enjoyed this problem! Took me a little while to solve it,
+ * but once I got the algorithm it solved both versions of the
+ * problem.
+ */
