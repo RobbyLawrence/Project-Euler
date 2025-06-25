@@ -10,7 +10,7 @@ using namespace std;
  * After that, I take that modulo 7.
  *
  * I did a little bit of testing. To determine the day of the month that the first of the month falls on,
- * if you have the day that the previous month starts on, do (curr_day + num_days - 1) % 7
+ * if you have the day that the previous month starts on, do (curr_day + num_days) % 7
  *
  */
 static const unordered_map<string,int> months = {
