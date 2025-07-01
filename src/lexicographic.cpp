@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
+#include <unordered_set>
 using namespace std;
 
 /*
@@ -13,14 +15,22 @@ using namespace std;
 * it's guaranteed that the millionth permutation will start with a two. So I'll just search through
 * all these. In short, I'm looking for the (1,000,000 - 2*362880)th permutation that starts with a 2.
 *
-* The next digit can't be 2.
+* Update: I made an effort to solve only using combinatorics, and wasn't successful.
+* So now I have to write the program lol
 *
 */
 
+bool has_double(string number) {
+    vector<bool> seen(false,10);
+    for (char c : number) {
+        if (seen[(int)c]) {}
+    }
+}
+
 int main() {
     vector<int> digits = {0,1,2,3,4,5,6,7,8,9};
-    vector<int> permuations;
-    for (int i = 1;i<=1000000 - 2*362880;i++) {
+    vector<int> permutations;
+    while (true) {
 
     }
     return 0;
