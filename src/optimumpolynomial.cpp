@@ -1,5 +1,3 @@
-#include <cinttypes>
-#include <execution>
 #include <iostream>
 #include <vector>
 #include <iomanip>
@@ -26,7 +24,9 @@ BIG evaluate(BIG n) {
 BIG guess_next(vector<BIG> sequence) {
     /*
     * my main strategy here is NOT to use regression and evaluate the resulting polynomial
+    *
     * that would be slow
+    *
     * instead, I'll find all the differences of the numbers, and then the differences of the differences, and then... ad infinitum.
     * I'll continue that process until the differences vector has length 1, and then walk back down the differences "pyramid",
     * using the information from above to fill in missing information.
@@ -111,3 +111,9 @@ int main() {
     }
     cout << setprecision(11)<<"FITs total: " << fit_total << '\n';
 }
+
+
+/*
+ * very very fun problem, enjoyed it so much.
+ * glad that I could make use of a pattern that I noticed when I was much younger.
+ */
