@@ -36,3 +36,8 @@ int main() {
     std::cout << "Distinct powers: " << distinct.size() << '\n';
     return 0;
 }
+
+/*
+ * Once I was using GMP Bignum, this got super easy.
+ * Not too bad. I didn't think of a clever way to solve it though
+ */
