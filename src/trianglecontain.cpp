@@ -55,6 +55,7 @@ bool contains(const Triangle& t, Point p) {
 }
 
 int main() {
+    // everything works now, but need to handle processing
     Triangle triangle = Triangle(Point(-1,-6),Point(-2,-1),Point(4,0));
     bool result = contains(triangle, Point(0,0));
     if (result) {
