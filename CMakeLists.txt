@@ -7,7 +7,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # 2) C++ settings
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-add_compile_options(-g -Wall -Wextra -O2)
+add_compile_options(-g -Wall -O2)
 
 # 3) find GMP via pkg-config
 find_package(PkgConfig REQUIRED)
