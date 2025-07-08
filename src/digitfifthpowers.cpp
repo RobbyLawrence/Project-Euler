@@ -3,7 +3,11 @@
 #include <vector>
 #include <unordered_map>
 using namespace std;
-
+/*
+ * Problem 30: Digit Fifth Powers
+ * Not sure where to start with this. I'm going to write the function that adds the sum
+ * first, and then see how the numbers trend.
+ */
 int digit_fifth_power(int num){
     string num_string = to_string(num);
     int total = 0;
