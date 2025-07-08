@@ -4,6 +4,7 @@
 using namespace std;
 
 /*
+ * Problem 19: Counting Sundays
  * How to solve this problem...
  * I feel like the easiest way to do this might be to
  * have a "day" variable, and add the number of days in the next month to it.

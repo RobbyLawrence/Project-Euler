@@ -5,6 +5,7 @@
 using namespace std;
 
 /*
+ * Problem 27: Quadratic Primes
 * I couldn't think of a good strategy for this problem.
 * It seems like the whole "prime-generating quadratics" are an actual unsolved problem.
 * That is, there's currently no heuristic for determining the number of consecutive primes that

@@ -4,6 +4,7 @@
 #include <gmpxx.h>
 
 /*
+ * Problem 29: Distinct Powers
 * honestly I think I can just do all of this problem in main.
 * doesn't seem like it'll be too difficult.
 *
@@ -38,6 +39,7 @@ int main() {
 }
 
 /*
+ *
  * Once I was using GMP Bignum, this got super easy.
  * Not too bad. I didn't think of a clever way to solve it though
  */

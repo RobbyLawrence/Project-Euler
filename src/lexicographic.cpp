@@ -5,6 +5,7 @@
 using namespace std;
 
 /*
+ * Problem 24: Lexicographic Permutations
 * I was going to do this one soley through combinatorics, but decided that
 * defeats the purpose. I do know, however, that the number is going to start with a 2.
 * This is because there are 10 digits, and if we fix the first digit (for example, if I wanted to know how many

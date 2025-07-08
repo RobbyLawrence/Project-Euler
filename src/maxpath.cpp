@@ -6,6 +6,7 @@
 using namespace std;
 
 /*
+ * Problem 18 & 67: Maximum Path Sum I & II
 * What's the strategy for reading in the pyramid?
 * Requirements:
 * read in one line at a time. each number should be initialized into a Node that has a single parent (non-null)

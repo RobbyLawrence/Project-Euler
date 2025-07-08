@@ -5,6 +5,7 @@
 using namespace std;
 
 /*
+ * Problem 21: Amicable Numbers
  * The main thing I'm worried about here is computation time.
  *
  * Okay I thought about it for a little bit, and have decided on a strategy.

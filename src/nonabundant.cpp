@@ -4,6 +4,7 @@
 using namespace std;
 
 /*
+ * Problem 23: Non-Abundant Sums
  * I've got a first idea. This is kind of similar to the
  * amicable pairs problem that I finished earlier today.
  *

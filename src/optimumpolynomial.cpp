@@ -5,6 +5,7 @@
 using namespace std;
 
 /*
+ * Problem 101: Optimum Polynomial
 * Started coding before I even started thinking about this one lol
 * It seems obvious that there are going to be 10 FITs.
 * The only hard part is finding the FITs.

@@ -1,10 +1,17 @@
 #include <gmpxx.h>
 #include <iostream>
+#include <fstream>
+#include <string>
 #include <vector>
-#include <algorithm>
-#include <tuple>
 using namespace std;
 
+/*
+ * Problem 102: Triangle Containment
+ * started this one with Matthew.
+ *
+ * The strategy I ended up using is the cross product strategy for determining
+ * if a point is within a triangle instead of barycentric weights.
+ */
 struct Point {
     int x;
     int y;
@@ -56,13 +63,32 @@ bool contains(const Triangle& t, Point p) {
 
 int main() {
     // everything works now, but need to handle processing
-    Triangle triangle = Triangle(Point(-1,-6),Point(-2,-1),Point(4,0));
-    bool result = contains(triangle, Point(0,0));
-    if (result) {
-        cout << "YES\n";
+    ifstream fin("problemfiles/102_triangles.txt");
+    if (!fin.is_open()) {
+        cerr << "Unable to open file\n";
+        return 1;
     }
-    else {
-        cout << "NO\n";
+    int a = 0, b = 0, c = 0, d = 0, e = 0, f = 0;
+    char comma;
+    Point origin = Point();
+    int num_triangles = 0;
+    while (fin >> a >> comma
+        >> b >> comma
+        >> c >> comma
+        >> d >> comma
+        >> e >> comma
+        >> f) {
+            Triangle t = Triangle(Point(a,b),Point(c,d),Point(e,f));
+            if (contains(t, origin)) {
+                num_triangles++;
+            }
     }
+    cout << "Number of triangles containing origin: " << num_triangles << endl;
+
     return 0;
 }
+
+/*
+ * this wasn't too bad. all I was doing was implementing the cross product strategy
+ * I did get to try some cool operator overloading stuff.
+ */
